@@ -1,10 +1,9 @@
 @import "./base/reset";
 @import "./utils/mixin";
+@import "./vendors/fonts";
+@import "./content/font";
 @import "./utils/manualResponsive";
 @import "./utils/responsive";
 @import "./layout/mainSlider";
-@import "./utils/responsive";
-@import "./vendors/fonts";
-@import "./content/font";
 @import "./layout/header";
 
