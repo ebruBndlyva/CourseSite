@@ -10,6 +10,8 @@
             font-size: 18px;
             text-transform: uppercase;
             text-align: center;
+            margin-bottom: 50px;
+            letter-spacing: 3.5px;
         }
 
         .news {
@@ -20,7 +22,8 @@
                     font-size: 14px;
                     margin-left: 10px;
                     text-decoration: none;
-                    color: #72d5cd
+                    color: #72d5cd;
+                    letter-spacing: 0;
                 }
             }
 
@@ -31,6 +34,7 @@
                     background-color: rgb(245, 245, 245);
                     padding: 20px;
                     @include flex(center, center, row, 10px);
+                    border-bottom: 2px solid #72d5cd;
 
                     .news-img {
                         width: 60px;
@@ -49,17 +53,24 @@
                             text-decoration: none;
                             font-size: 13px;
                             font-family: $ralewayFonts;
-                            text-transform: uppercase
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            color: #424242;
+                            letter-spacing: 1.3px;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-family:$MontserratFonts;
+                            color: #AEAEAE;
                         }
                     }
                 }
             }
         }
-
         .school {
             .scholl-wrapper {
                 @include flex(center, center, column, 15px);
-
                 .video {
                     iframe {
                         width: 100%;

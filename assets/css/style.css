@@ -352,6 +352,7 @@
   background-image: url(/assets/Media/Images/inputsPicture.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  user-select: none;
 }
 #courses-search .courses-search-background {
   background-color: rgba(0, 0, 0, 0.447);
@@ -836,6 +837,8 @@ header .header-wrapper .navbar nav .nav-menu {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 3.5px;
 }
 #blog .blog-wrapper .news h3 a {
   font-family: "Montserrat", sans-serif;
@@ -844,6 +847,7 @@ header .header-wrapper .navbar nav .nav-menu {
   margin-left: 10px;
   text-decoration: none;
   color: #72d5cd;
+  letter-spacing: 0;
 }
 #blog .blog-wrapper .news .news-cards {
   display: flex;
@@ -860,6 +864,7 @@ header .header-wrapper .navbar nav .nav-menu {
   align-items: center;
   flex-direction: row;
   gap: 10px;
+  border-bottom: 2px solid #72d5cd;
 }
 #blog .blog-wrapper .news .news-cards .news-card .news-img {
   width: 60px;
@@ -881,6 +886,14 @@ header .header-wrapper .navbar nav .nav-menu {
   font-size: 13px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  font-weight: 600;
+  color: #424242;
+  letter-spacing: 1.3px;
+}
+#blog .blog-wrapper .news .news-cards .news-card .news-desc span {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #AEAEAE;
 }
 #blog .blog-wrapper .school .scholl-wrapper {
   display: flex;
