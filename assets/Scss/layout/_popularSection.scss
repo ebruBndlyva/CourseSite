@@ -1,0 +1,108 @@
+#popular {
+
+
+    .popular-wrapper {
+
+        @include flex(center, center, column, 70px);
+
+        .popular-head {
+            @include flex(center, center, column, 50px);
+
+            h2 {
+                position: relative;
+                font-size: 25px;
+                font-family: $ralewayFonts;
+                line-height: 1;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 2px;
+
+                &::after {
+                    content: "";
+                    height: 1px;
+                    width: 40px;
+                    background-color: black;
+                    position: absolute;
+                    bottom: -25px;
+                    right: 47%;
+                }
+            }
+
+            span {
+                font-size: 14px;
+                letter-spacing: 1px;
+                font-family: $MontserratFonts;
+                color: #A4A4A4;
+            }
+        }
+
+        .popular-cards {
+            @include grid(repeat(3, 1fr));
+            gap: 50px;
+
+
+            @include responsive(medium2) {
+                @include grid(1fr);
+            }
+
+            .popular-card {
+                .popular-img {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .popular-contact {
+        margin-top: 70px;
+        padding: 50px 0;
+        background-color: rgb(114, 213, 205);
+
+        .popular-wrapper {
+            @include flex(space-between, center);
+            color: white;
+
+            @include responsive(medium2) {
+                @include flex(center, center,column,20px);
+            }
+
+            .contact-left {
+                @include flex(center, flex-start, column, 20px);
+                @include responsive(medium2) {
+                    @include flex(center, center,column,20px);
+                }
+
+                h2 {
+                    font-size: 22px;
+                    font-family: $ralewayFonts;
+                    letter-spacing: 2px;
+                }
+
+                P {
+                    font-size: 14px;
+                    font-family: $MontserratFonts;
+                    @include responsive(medium2) {
+                      text-align: center;
+                    }
+                }
+            }
+
+            .contact-right {
+                button {
+                    padding: 15px 25px;
+                    background-color: rgb(85, 85, 85);
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+}
