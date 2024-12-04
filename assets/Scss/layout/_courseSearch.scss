@@ -1,9 +1,14 @@
 #courses-search {
     background-image: url(/assets/Media/Images/inputsPicture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
     .courses-search-background {
         background-color: rgba(0, 0, 0, 0.447);
         height: 100%;
         width: 100%;
+
         .courses-search-container {
             display: flex;
             flex-direction: column;
@@ -11,22 +16,27 @@
             align-items: center;
             justify-content: center;
             color: white;
+
             span {
                 color: rgba(0, 0, 0, 0);
                 border-top: 1px solid white;
                 font-size: 50px;
             }
+
             p {
                 color: rgb(199, 199, 199);
             }
+
             input {
                 background-color: white;
                 padding: 10px;
                 margin: 0px 10px;
             }
+
             .big-input {
                 width: 500px;
             }
+
             button {
                 background-color: rgb(107, 212, 177);
                 color: white;
@@ -34,5 +44,5 @@
             }
         }
     }
-    
+
 }
