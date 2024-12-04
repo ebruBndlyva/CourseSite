@@ -11,6 +11,98 @@
   border: none;
 }
 
+@media (max-width: 376px) {
+  .carousel-inner img {
+    height: 300px;
+  }
+  .text-end h1 {
+    font-size: 22px !important;
+  }
+  .text-end h3 {
+    font-size: 8px !important;
+  }
+  .text-end p {
+    font-size: 10px !important;
+    margin-left: 50px !important;
+  }
+  .text-end .learn-more-button {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+  }
+  .text-start h1 {
+    font-size: 22px !important;
+  }
+  .text-start h3 {
+    font-size: 17px !important;
+  }
+  .text-start p {
+    font-size: 13px !important;
+  }
+  .text-start .learn-more-button {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+  }
+  .text-center {
+    padding-left: 100px !important;
+  }
+  .text-center h1 {
+    font-size: 20px !important;
+  }
+  .text-center h2 {
+    font-size: 12px !important;
+  }
+  .text-center .learn-more-button {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+  }
+  .third-section-container {
+    grid-template-columns: 1fr !important;
+  }
+  .more-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .more-info-container .more-info-left-side {
+    text-align: center;
+  }
+  .more-info-container .more-info-right-side {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .more-info-container .more-info-right-side button {
+    padding-top: 10px !important;
+  }
+  .courses-search-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .courses-search-form input {
+    margin-bottom: 20px !important;
+  }
+  .courses-search-form button {
+    padding: 10px 30px !important;
+    width: 510px !important;
+  }
+  #ratings h2 {
+    font-size: 20px !important;
+  }
+  #ratings .ratings-reviews {
+    padding: 30px 20px !important;
+  }
+  #ratings .ratings-reviews h1 {
+    font-size: 67px !important;
+    top: -8% !important;
+    left: -10% !important;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .black-line .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 @media (min-width: 376px) {
   .carousel-inner img {
     height: 300px;
@@ -83,8 +175,27 @@
     padding: 10px 30px !important;
     width: 510px !important;
   }
+  #ratings h2 {
+    font-size: 20px !important;
+  }
+  #ratings .ratings-reviews {
+    padding: 30px 20px !important;
+  }
+  #ratings .ratings-reviews h1 {
+    font-size: 67px !important;
+    top: -8% !important;
+    left: -10% !important;
+  }
+  #ratings .black-line .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
-@media (min-width: 440px) {
+@media (min-width: 376px) and (min-width: 440px) {
   .carousel-inner img {
     height: 300px;
   }
@@ -125,8 +236,15 @@
   .text-center .learn-more-button {
     font-size: 10px !important;
   }
+  #ratings .ratings-reviews {
+    padding: 30px 100px !important;
+  }
+  #ratings .ratings-reviews h1 {
+    top: -8% !important;
+    left: 5% !important;
+  }
 }
-@media (min-width: 576px) {
+@media (min-width: 376px) and (min-width: 576px) {
   .carousel-inner img {
     height: 450px;
   }
@@ -163,8 +281,14 @@
     margin: 0px !important;
     margin-bottom: 15px !important;
   }
+  #ratings .ratings-reviews {
+    padding: 30px 140px !important;
+  }
+  #ratings .ratings-reviews h1 {
+    left: 5% !important;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 376px) and (min-width: 768px) {
   .text-end h1 {
     font-size: 42px !important;
   }
@@ -202,8 +326,21 @@
   .more-info-container .more-info-left-side {
     text-align: start;
   }
+  #ratings .ratings-reviews {
+    padding: 30px 140px !important;
+  }
+  #ratings .ratings-reviews h1 {
+    left: 5% !important;
+  }
+  .black-line .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
 }
-@media (min-width: 992px) {
+@media (min-width: 376px) and (min-width: 768px) and (min-width: 992px) {
   .text-end h1 {
     font-size: 52px !important;
   }
@@ -232,8 +369,11 @@
   .text-center h2 {
     font-size: 22px !important;
   }
+  #ratings .ratings-reviews {
+    padding: 30px 180px !important;
+  }
 }
-@media (min-width: 1200px) {
+@media (min-width: 376px) and (min-width: 768px) and (min-width: 1200px) {
   .text-end h1 {
     font-size: 52px !important;
   }
@@ -272,8 +412,19 @@
     padding: 10px 25px !important;
     width: 130px !important;
   }
+  #ratings h2 {
+    font-size: 20px !important;
+  }
+  #ratings .ratings-reviews {
+    padding: 30px 270px !important;
+  }
+  #ratings .ratings-reviews h1 {
+    top: -30% !important;
+    left: 16% !important;
+    font-size: 110px !important;
+  }
 }
-@media (min-width: 1400px) {
+@media (min-width: 376px) and (min-width: 768px) and (min-width: 1400px) {
   .text-end h1 {
     font-size: 60px !important;
   }
@@ -1122,3 +1273,151 @@ header .header-wrapper .navbar nav .nav-menu {
   font-size: 12px;
   font-weight: 600;
 }
+
+#ratings {
+  padding: 100px 0;
+  background-color: rgb(242, 242, 242);
+}
+#ratings .recent-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  font-family: "Raleway", sans-serif;
+}
+#ratings .recent-head h2 {
+  text-transform: uppercase;
+  font-size: 25px !important;
+  font-weight: 600;
+}
+#ratings .recent-head button {
+  background-color: #72d5cd;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 100%;
+}
+#ratings .ratings-reviews {
+  padding: 30px 270px;
+  padding-bottom: 0px !important;
+  position: relative;
+}
+#ratings .ratings-reviews span {
+  color: rgb(107, 212, 177);
+}
+#ratings .ratings-reviews p {
+  color: gray;
+}
+#ratings .ratings-reviews .test {
+  position: absolute;
+  top: -50px !important;
+  left: 150px !important;
+  font-size: 110px !important;
+  color: rgb(186, 186, 186);
+}
+
+footer {
+  background-color: rgb(47, 47, 47);
+  padding: 60px 0px 0px 0px;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+footer .footer-container h6 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+footer .footer-container .box-1 p {
+  color: rgb(167, 167, 167);
+}
+footer .footer-container .box-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer-container .box-2 a {
+  color: white;
+  text-decoration: none;
+  background-color: #72d5cd;
+  margin: 7px 7px 0px 0px !important;
+  padding: 5px 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+footer .footer-container .box-2 a:hover {
+  background-color: #65c0b8;
+  transition: all 0.3s ease;
+}
+footer .footer-container .box-3 .news-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .footer-container .box-3 .news-cards .news-card {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.809);
+}
+footer .footer-container .box-3 .news-cards .news-card .news-img {
+  width: 60px;
+  height: 60px;
+}
+footer .footer-container .box-3 .news-cards .news-card .news-img img {
+  width: 100%;
+  height: 100%;
+}
+footer .footer-container .box-3 .news-cards .news-card .news-desc {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-container .box-3 .news-cards .news-card .news-desc a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+footer .footer-container .box-3 .news-cards .news-card .news-desc a:hover {
+  color: rgb(142, 142, 142);
+  transition: all 0.3s ease;
+}
+footer .footer-container .box-3 .news-cards .news-card .news-desc span {
+  color: gray;
+  font-size: 14px;
+}
+footer .footer-container .box-4 .texts-box-4 p {
+  color: rgb(147, 147, 147);
+  border-bottom: 1px solid gray;
+  padding: 7px 0px;
+  margin-bottom: 0px;
+  transition: all 0.3s ease;
+}
+footer .footer-container .box-4 .texts-box-4 p:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
+footer .footer-container .box-4 .texts-box-4 span {
+  color: white;
+}
+footer .black-line {
+  background-color: black;
+  color: gray;
+  padding: 20px 0px;
+  margin-top: 60px;
+}
+footer .black-line .content {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
