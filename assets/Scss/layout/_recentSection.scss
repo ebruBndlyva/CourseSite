@@ -1,0 +1,84 @@
+#recent {
+  padding: 100px 0;
+  .recent-head {
+    @include flex(center, center, row, 30px);
+    font-family: $ralewayFonts;
+    h2 {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 600;
+    }
+    button {
+      background-color: #72d5cd;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 100%;
+    }
+  }
+  .view {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    a {
+      font-family: $MontserratFonts;
+      text-decoration: none;
+      color: #72d5cd;
+    }
+  }
+  .recent-cards {
+    @include grid(repeat(3, 1fr));
+    gap: 25px;
+    @include responsive(medium2) {
+      @include grid(1fr);
+    }
+
+    .recent-card {
+        border-bottom: 3px solid #72d5cd;
+      .card-img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .card-desc {
+        padding: 30px 15px 50px 15px;
+        background-color: #f5f5f5;
+        @include flex(center, center, column, 15px);
+        @include responsive(medium2) {
+            @include flex(center, flex-start, column, 15px);
+          }
+        .desc-top {
+          h3 {
+            font-family: $ralewayFonts;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #212121;
+            line-height: 1.5;
+          }
+        }
+        .desc-foot {
+            width: 100%;
+          @include flex(center, center, row, 15px);
+          @include responsive(medium2) {
+            @include flex(space-between, center, row);
+          }
+          button {
+            padding: 5px 15px;
+            background-color: #72d5cd;
+            color: white;
+          }
+          span {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #a4a4a4;
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
