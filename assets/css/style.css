@@ -102,6 +102,27 @@
     justify-content: space-between;
     flex-direction: column;
   }
+  .regisrtation-forms {
+    flex-direction: column !important;
+    margin-bottom: 50px;
+  }
+  .regisrtation-forms .regisrtation-forms-left {
+    height: 50% !important;
+    width: 100% !important;
+  }
+  .regisrtation-forms .regisrtation-forms-left input[name=address] {
+    position: absolute !important;
+    top: 0 !important;
+  }
+  .regisrtation-forms .regisrtation-forms-left button {
+    position: absolute !important;
+    bottom: 0;
+    left: 20px;
+  }
+  .regisrtation-forms .regisrtation-forms-right {
+    height: 50% !important;
+    width: 100% !important;
+  }
 }
 @media (min-width: 376px) {
   .carousel-inner img {
@@ -157,6 +178,10 @@
   .more-info-container .more-info-left-side {
     text-align: center;
   }
+  .more-info-container .more-info-left-side input[name=address] {
+    position: absolute !important;
+    top: 0 !important;
+  }
   .more-info-container .more-info-right-side {
     align-items: center !important;
     justify-content: center !important;
@@ -193,6 +218,27 @@
   }
   .footer-container {
     grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .regisrtation-forms {
+    flex-direction: column !important;
+    margin-bottom: 100px !important;
+  }
+  .regisrtation-forms .regisrtation-forms-left {
+    height: 50% !important;
+    width: 100% !important;
+  }
+  .regisrtation-forms .regisrtation-forms-left input[name=address] {
+    position: absolute !important;
+    top: 0 !important;
+  }
+  .regisrtation-forms .regisrtation-forms-left button {
+    position: absolute !important;
+    bottom: 0;
+    left: 20px;
+  }
+  .regisrtation-forms .regisrtation-forms-right {
+    height: 50% !important;
+    width: 100% !important;
   }
 }
 @media (min-width: 376px) and (min-width: 440px) {
@@ -338,6 +384,17 @@
   }
   .footer-container {
     grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .regisrtation-forms {
+    flex-direction: row !important;
+  }
+  .regisrtation-forms .regisrtation-forms-left {
+    height: 100% !important;
+    width: 50% !important;
+  }
+  .regisrtation-forms .regisrtation-forms-right {
+    height: 100% !important;
+    width: 50% !important;
   }
 }
 @media (min-width: 376px) and (min-width: 768px) and (min-width: 992px) {
@@ -1198,4 +1255,72 @@ footer .black-line {
 footer .black-line .content {
   display: flex;
   justify-content: space-between;
+}
+
+.register-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(/assets/Media/Images/coffee-background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.register-top .register-top-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  padding: 60px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.regisrtation-forms {
+  margin-top: 50px;
+  display: flex;
+  padding: 50px 0px;
+  position: relative;
+}
+.regisrtation-forms label {
+  display: block;
+  color: rgb(176, 176, 176);
+  margin-bottom: 13px;
+}
+.regisrtation-forms .inputs {
+  padding: 15px;
+  border: 1px solid rgb(232, 232, 232);
+  width: 100%;
+  margin-bottom: 20px;
+}
+.regisrtation-forms .regisrtation-forms-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 0px 20px;
+}
+.regisrtation-forms .regisrtation-forms-left .address-input {
+  padding: 5px;
+  height: 100px;
+  width: 100%;
+  border: 1px solid rgb(232, 232, 232);
+}
+.regisrtation-forms .regisrtation-forms-left button {
+  background-color: rgb(107, 212, 177);
+  color: white;
+  padding: 15px 37px;
+  margin-top: 20px;
+  border-bottom: 3px solid rgb(82, 163, 136);
+  cursor: pointer;
+}
+.regisrtation-forms .regisrtation-forms-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 0px 20px;
 }/*# sourceMappingURL=style.css.map */

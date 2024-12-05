@@ -97,6 +97,27 @@
         flex-direction: column;
     }
 }
+.regisrtation-forms {
+    flex-direction: column !important;
+    margin-bottom: 50px;
+    .regisrtation-forms-left {
+        height: 50% !important;
+        width: 100% !important;
+        input[name="address"] {
+            position: absolute !important;
+            top: 0 !important;
+        }
+        button {
+            position: absolute !important;
+            bottom: 0;
+            left: 20px;
+        }
+    }
+    .regisrtation-forms-right {
+        height: 50% !important;
+        width: 100% !important;
+    }
+}
 }
 
 @media (min-width: 376px) {
@@ -155,6 +176,10 @@
         align-items: center;
         .more-info-left-side {
             text-align: center;
+            input[name="address"] {
+                position: absolute !important;
+                top: 0 !important;
+            }
         }
         .more-info-right-side {
             align-items: center !important;
@@ -198,6 +223,28 @@
     .footer-container {
         grid-template-columns: repeat(1,1fr) !important;
 } 
+.regisrtation-forms {
+    flex-direction: column !important;
+    margin-bottom: 100px !important;
+    .regisrtation-forms-left {
+        height: 50% !important;
+        width: 100% !important;
+        input[name="address"] {
+            position: absolute !important;
+            top: 0 !important;
+        }
+        button {
+            position: absolute !important;
+            bottom: 0;
+            left: 20px;
+        }
+    }
+    .regisrtation-forms-right {
+        height: 50% !important;
+        width: 100% !important;
+        
+    }
+}
 
     @media (min-width: 440px) {
     .carousel-inner img {
@@ -366,7 +413,17 @@
         .footer-container {
             grid-template-columns: repeat(4,1fr) !important;
     }
-    
+    .regisrtation-forms {
+        flex-direction: row !important;
+        .regisrtation-forms-left {
+            height: 100% !important;
+            width: 50% !important;
+        }
+        .regisrtation-forms-right {
+            height: 100% !important;
+            width: 50% !important;
+        }
+    }
     
     @media (min-width: 992px) {
         .text-end {

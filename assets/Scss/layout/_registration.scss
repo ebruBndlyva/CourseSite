@@ -1,0 +1,67 @@
+.register-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/assets/Media/Images/coffee-background.jpg);
+    background-position: center;
+    background-size: cover;
+    .register-top-overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        width: 100%;
+        padding: 60px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+}
+
+.regisrtation-forms {
+    margin-top: 50px;
+    display: flex;
+    padding: 50px 0px;
+    position: relative;
+    label {
+        display: block;
+        color: rgb(176, 176, 176);
+        margin-bottom: 13px;
+    }
+    .inputs {
+        padding: 15px;
+        border: 1px solid rgb(232, 232, 232);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .regisrtation-forms-left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding: 0px 20px;
+        .address-input {
+            padding: 5px;
+            height: 100px;
+            width: 100%;
+            border: 1px solid rgb(232, 232, 232);
+        }
+        button {
+            background-color: rgb(107, 212, 177);
+            color: white;
+            padding: 15px 37px;
+            margin-top: 20px;
+            border-bottom: 3px solid rgb(82, 163, 136);
+            cursor: pointer;
+        }
+    }
+    .regisrtation-forms-right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding: 0px 20px;
+    }
+}
