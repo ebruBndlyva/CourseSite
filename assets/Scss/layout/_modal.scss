@@ -1,0 +1,123 @@
+.course-modal {
+    display: none ;
+  width: 630px;
+  @include responsive(medium2) {
+    width: 90%;
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
+  background-color: #f3f3f3;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+
+  .modal-top {
+    width: 100%;
+    margin-bottom: 50px;
+    @include flex(center, flex-start, column, 30px);
+    h3 {
+      font-size: 22px;
+      font-family: $ralewayFonts;
+      font-weight: 700;
+      color: #333;
+    }
+    form {
+      width: 100%;
+      @include flex(center, flex-start, column, 15px);
+      .account {
+        width: 100%;
+        @include grid(repeat(2, 1fr));
+        @include responsive(medium2) {
+          @include grid(1fr);
+        }
+        gap: 30px;
+        .username {
+          @include flex(center, flex-start, column, 5px);
+        }
+        .pasw {
+          @include flex(center, flex-start, column, 5px);
+        }
+        label {
+          font-family: $MontserratFonts;
+          color: #a7a7a7;
+          font-size: 13px;
+          font-weight: 700;
+        }
+        input {
+          width: 100%;
+          background-color: white;
+          padding: 10px 25px;
+          font-size: 13px;
+          &:focus {
+            outline: none;
+            color: #a7a7a7;
+          }
+        }
+      }
+      a {
+        font-size: 14px;
+        font-family: $MontserratFonts;
+        color: #72d5cd;
+        text-decoration: none;
+      }
+      button {
+        @include flex(center, center);
+        width: 100%;
+        text-align: center;
+        background-color: #72d5cd;
+        color: white;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 14px 0;
+        font-size: 11px;
+        border-bottom: 3px solid #65b4ad;
+      }
+    }
+  }
+  .modal-foot {
+    width: 100%;
+    @include flex(center, flex-start, column, 5px);
+    h3 {
+      font-size: 22px;
+      font-family: $ralewayFonts;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: $MontserratFonts;
+      color: #a7a7a7;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    button {
+      @include flex(center, center);
+      width: 100%;
+      text-align: center;
+      background-color: #72d5cd;
+      color: white;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 14px 0;
+      font-size: 11px;
+      border-bottom: 3px solid #65b4ad;
+    }
+  }
+  .close-btn{
+    font-family: $MontserratFonts;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+    i{
+      color: #a7a7a7;
+      font-size: 13px;
+      font-weight: 900;
+    }
+  }
+}
