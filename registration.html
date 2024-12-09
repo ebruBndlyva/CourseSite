@@ -8,6 +8,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Registration Page</title>
+    <script defer type="module" src="./assets/Js/register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js" integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
@@ -73,32 +75,32 @@
             <div class="registration-main">
                 <div class="regisrtation-forms content">
                     <div class="regisrtation-forms-left">
-                        <form>
+                        <form class="regForm">
                             <label for="username">Username *</label>
-                            <input type="text" name="username" class="inputs">
+                            <input type="text" name="username" class="inputs" id="userName">
                             <label for="password">Password *</label>
-                            <input type="password" name="password" class="inputs">
+                            <input type="password" name="password" class="inputs" id="password">
                             <label for="firstname">First Name *</label>
-                            <input type="text" name="firstname" class="inputs">
+                            <input type="text" name="firstname" class="inputs" id="firstName">
                             <label for="gender">Gender *</label>
-                            <input type="text" name="gender" class="inputs">
+                            <input type="text" name="gender" class="inputs" id="gender">
                             <label for="email">Email *</label>
-                            <input type="email" name="email" class="inputs">
+                            <input type="email" name="email" class="inputs" id="email">
                             <label for="address">Address *</label>
-                            <textarea name="address" class="address-input"></textarea>
+                            <textarea name="address" class="address-input" id="addres"></textarea>
                             <button type="submit">CREATE AN ACCOUNT</button>
                         </form>
                     </div>
                     <div class="regisrtation-forms-right">
                         <form>
                             <label for="rePassword">Re Password *</label>
-                            <input type="password" name="rePassword" class="inputs">
+                            <input type="password" id="rePasw" name="rePassword" class="inputs">
                             <label for="lastName">Last Name *</label>
-                            <input type="text" name="lastName" class="inputs">
+                            <input type="text" name="lastName" id="lastName" class="inputs">
                             <label for="birthDate">Birth Date *</label>
-                            <input type="text" name="birthDate" class="inputs">
+                            <input type="text" name="birthDate" id="birthday" class="inputs">
                             <label for="phone">Phone *</label>
-                            <input type="text" name="phone" class="inputs">
+                            <input type="number" name="phone" id="phone" class="inputs">
                         </form>
                     </div>
                 </div>

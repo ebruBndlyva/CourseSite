@@ -1671,6 +1671,12 @@ footer .black-line {
 footer .black-line .content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  footer .black-line .content {
+    flex-direction: column;
+  }
 }
 
 .register-top {
@@ -1682,6 +1688,7 @@ footer .black-line .content {
   background-image: url(/assets/Media/Images/coffee-background.jpg);
   background-position: center;
   background-size: cover;
+  height: 50vh;
 }
 .register-top .register-top-overlay {
   background-color: rgba(0, 0, 0, 0.4);
@@ -1739,10 +1746,4 @@ footer .black-line .content {
   width: 50%;
   height: 100%;
   padding: 0px 20px;
-  align-items: center;
-}
-@media (max-width: 767px) {
-  footer .black-line .content {
-    flex-direction: column;
-  }
 }/*# sourceMappingURL=style.css.map */
